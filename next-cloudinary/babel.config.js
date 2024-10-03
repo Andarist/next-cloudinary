@@ -7,6 +7,7 @@ module.exports = api => {
 
   presets.push(['@babel/preset-react', { runtime: 'automatic' }]);
   presets.push(['@babel/preset-typescript']);
+  presets.push(['babel-plugin-annotate-pure-calls']);
 
   return {
     presets
